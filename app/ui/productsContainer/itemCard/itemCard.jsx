@@ -20,7 +20,7 @@ const ItemCard = ({ size = "secondary", title, imageName, price }) => {
           className={`${
             size === "secondary"
               ? "rounded-t-lg lg:rounded-b-lg lg:rounded-t-none"
-              : "sm:rounded-t-lg"
+              : "rounded-t-lg"
           } overflow-auto  object-cover`}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
