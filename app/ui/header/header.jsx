@@ -12,15 +12,15 @@ function Header() {
         src={"/logo.svg"}
         priority="true"
         alt="logo"
-        width="103"
-        height="32"
+        width={103}
+        height={32}
       />
       <nav className="hidden sm:block">
         <NavbarItems />
       </nav>
       <MobileNavBar />
       <div className="hidden sm:block">
-        <Button>Start Saving</Button>
+        <Button variation="standard">Start Saving</Button>
       </div>
     </header>
   );

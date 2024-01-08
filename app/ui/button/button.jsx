@@ -1,3 +1,5 @@
+"use client";
+
 const { default: styled, css } = require("styled-components");
 
 const variations = {

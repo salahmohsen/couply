@@ -11,9 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={(nunito.className, "mx-5 sm:mx-14 md:mx-32")}>
-        {children}
-      </body>
+      <body className={nunito.className}>{children}</body>
     </html>
   );
 }

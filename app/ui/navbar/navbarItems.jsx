@@ -2,7 +2,7 @@ import NavbarItem from "./navbarItem";
 
 const NavbarItems = ({ className = "" }) => {
   return (
-    <ul className={`flex flex-col gap-9 sm:flex-row ${className}`}>
+    <ul className={`flex flex-col gap-5 sm:flex-row   ${className}`}>
       <NavbarItem>Home</NavbarItem>
       <NavbarItem>Coupons</NavbarItem>
       <NavbarItem>FAQ</NavbarItem>
