@@ -3,7 +3,7 @@ import Header from "./ui/header/header";
 import Section from "./ui/layout/section";
 import MainSection from "./ui/mainSection/mainSection";
 import BrandsCarousel from "./ui/brandsCarousel/brandsCarousel";
-import ItemCard from "./ui/itemCard/itemCard";
+import ProductsContainer from "./ui/productsContainer/productsContainer";
 
 export default function Home() {
   return (
@@ -19,49 +19,14 @@ export default function Home() {
       <div className=" h-64 bg-black">
         <BrandsCarousel />
       </div>
-      <Section className={" -mt-24 mb-10 flex flex-wrap justify-center gap-5 "}>
-        <ItemCard
-          imageName={"WomenNikeShoes"}
-          title={"Women’s Nike Shoes"}
-          price={"59"}
-        />
-        <ItemCard
-          size="secondary"
-          imageName={"headphones"}
-          title={"Headphones"}
-          price={"59"}
-        />
-        <ItemCard
-          size="secondary"
-          imageName={"labtops"}
-          title={"Laptops"}
-          price={"59"}
-        />
-        <ItemCard
-          size="secondary"
-          imageName={"heals"}
-          title={"heals"}
-          price={"59"}
-        />
-        <ItemCard
-          size="secondary"
-          imageName={"watchs"}
-          title={"Smart Watchs"}
-          price={"59"}
-        />
-        <ItemCard imageName={"lighting"} title={"Pendant lamp"} price={"59"} />
-        <ItemCard
-          size="secondary"
-          imageName={"phones"}
-          title={"Iphones"}
-          price={"59"}
-        />
-        <ItemCard
-          size="secondary"
-          imageName={"sunGlasses"}
-          title={"Sung Glasses"}
-          price={"59"}
-        />
+      <Section className={"-mt-20 mb-10"}>
+        <div
+          className={
+            "lg:grid-cols-13 mx-auto grid max-w-screen-lg grid-cols-1 gap-5 md:grid-cols-2"
+          }
+        >
+          <ProductsContainer />
+        </div>
       </Section>
     </main>
   );

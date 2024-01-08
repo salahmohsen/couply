@@ -1,11 +1,12 @@
 import Image from "next/image";
+// size === "secondary" ? "sm:w-72" : "sm:w-72 lg:w-96"
 
-const ItemCard = ({ size = "main", title, imageName, price }) => {
+const ItemCard = ({ size = "secondary", title, imageName, price }) => {
   return (
     <div
       className={`${
-        size === "secondary" ? "sm:w-72" : "sm:w-72 lg:w-96"
-      } relative flex h-56 w-full max-w-screen-sm cursor-pointer flex-col rounded-xl border-2 bg-white shadow-[4px_4px_0px_0px_black] hover:shadow-none `}
+        size === "secondary" ? "lg:col-span-3 " : "lg:col-span-4 "
+      } relative flex h-56 cursor-pointer flex-col rounded-xl border-2 bg-white shadow-[4px_4px_0px_0px_black] hover:shadow-none `}
     >
       <div
         className={`${

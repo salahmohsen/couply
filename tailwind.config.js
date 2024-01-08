@@ -29,6 +29,7 @@ module.exports = {
           to: { transform: "translateX(-100%)" },
         },
       },
+      gridTemplateColumns: { 13: "repeat(13, minmax(0, 1fr))" },
     },
   },
   plugins: [],
