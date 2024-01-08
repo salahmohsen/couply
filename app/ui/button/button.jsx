@@ -29,11 +29,11 @@ const Button = styled.button`
   padding: 7px 15px;
   border-radius: 3px;
   gap: 10px;
-  ${(props) => variations[props.variation]}
+  ${(props) => variations[props.$variation]}
 `;
 
 Button.defaultProps = {
-  variation: "standard",
+  $variation: "standard",
 };
 
 export default Button;

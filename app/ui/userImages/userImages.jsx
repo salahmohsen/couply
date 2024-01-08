@@ -28,7 +28,7 @@ const UserImage = ({ filename, intersection = true, border = true }) => {
       width={54}
       height={54}
       alt="user"
-      priority="false"
+      priority={false}
       className={`${intersection ? "mr-[-22px]" : null} ${
         border ? "border-[4px]" : null
       }  rounded-full border-white`}

@@ -1,6 +1,5 @@
 import Button from "../button/button";
 import UserImages from "../userImages/userImages";
-import Divider from "../divider/divider";
 
 const MainSection = () => {
   return (
@@ -29,7 +28,7 @@ const MainSection = () => {
             text={"Save! Apply coupons from the toolbar."}
           />
         </div>
-        <Button variation="main" className="mb-10">
+        <Button $variation="main" className="mb-10">
           Install Extension
         </Button>
       </div>

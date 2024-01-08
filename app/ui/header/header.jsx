@@ -20,7 +20,7 @@ function Header() {
       </nav>
       <MobileNavBar />
       <div className="hidden sm:block">
-        <Button variation="standard">Start Saving</Button>
+        <Button>Start Saving</Button>
       </div>
     </header>
   );
