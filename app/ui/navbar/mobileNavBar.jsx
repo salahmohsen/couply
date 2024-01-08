@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import NavbarItems from "./navbarItems";
 import { useState } from "react";
@@ -8,7 +9,7 @@ const MobileNavBar = () => {
   return (
     <>
       <button
-        className="z-30 block sm:hidden"
+        className=" z-50 block sm:hidden"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         {!isMenuOpen && (

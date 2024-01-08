@@ -1,13 +1,11 @@
-"use client";
-
 import Image from "next/image";
 import NavbarItems from "../navbar/navbarItems";
 import MobileNavBar from "../navbar/mobileNavBar";
 import Button from "../button/button";
 
-function Header() {
+function Header({ showSavingButton = true, className = "" }) {
   return (
-    <header className="my-5 flex items-center justify-between">
+    <header className={`${className} my-5 flex items-center justify-between`}>
       <Image
         src={"/logo.svg"}
         priority="true"
@@ -19,9 +17,11 @@ function Header() {
         <NavbarItems />
       </nav>
       <MobileNavBar />
-      <div className="hidden sm:block">
-        <Button>Start Saving</Button>
-      </div>
+      {showSavingButton && (
+        <div className={`hidden sm:block`}>
+          <Button>Start Saving</Button>
+        </div>
+      )}
     </header>
   );
 }

@@ -4,6 +4,7 @@ import Section from "./ui/layout/section";
 import MainSection from "./ui/mainSection/mainSection";
 import BrandsCarousel from "./ui/brandsCarousel/brandsCarousel";
 import ProductsContainer from "./ui/productsContainer/productsContainer";
+import Footer from "./ui/footer/footer";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
       <div className=" h-64 bg-black">
         <BrandsCarousel />
       </div>
-      <Section className={"-mt-20 mb-10"}>
+      <Section className={"-mt-20 mb-10 "}>
         <div
           className={
             "lg:grid-cols-13 mx-auto grid max-w-screen-lg grid-cols-1 gap-5 md:grid-cols-2"
@@ -28,6 +29,7 @@ export default function Home() {
           <ProductsContainer />
         </div>
       </Section>
+      <Footer />
     </main>
   );
 }

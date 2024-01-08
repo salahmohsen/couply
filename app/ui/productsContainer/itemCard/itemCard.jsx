@@ -22,6 +22,7 @@ const ItemCard = ({ size = "secondary", title, imageName, price }) => {
               ? "rounded-t-lg lg:rounded-b-lg lg:rounded-t-none"
               : "sm:rounded-t-lg"
           } overflow-auto  object-cover`}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
       <p
@@ -34,7 +35,7 @@ const ItemCard = ({ size = "secondary", title, imageName, price }) => {
       <div
         className={`${
           size === "secondary" ? "rounded-br-md" : "rounded-br-lg"
-        } absolute bottom-0 right-0 z-50 flex h-1/4 items-center  justify-center  bg-black pl-3 pr-2 text-white`}
+        } absolute bottom-0 right-0 z-auto flex h-1/4 items-center  justify-center  bg-black pl-3 pr-2 text-white`}
       >
         ${price}
       </div>
