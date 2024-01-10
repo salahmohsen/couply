@@ -3,7 +3,7 @@ import Image from "next/image";
 const UserImages = () => {
   return (
     <div className="flex items-center justify-center gap-10">
-      <div className="flex items-center justify-center">
+      <div className="mr-[22px] flex items-center justify-center sm:mr-0">
         <UserImage filename={"1.jpg"} />
         <UserImage filename={"2.jpg"} />
         <UserImage filename={"3.jpg"} />
