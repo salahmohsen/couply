@@ -14,7 +14,7 @@ const ItemCard = ({ size = "secondary", title, imageName, price }) => {
         } relative h-3/4 w-full`}
       >
         <Image
-          src={`/products/${imageName}.jpg`}
+          src={`/assets/products/${imageName}.jpg`}
           alt={"products"}
           fill={"true"}
           className={`${
