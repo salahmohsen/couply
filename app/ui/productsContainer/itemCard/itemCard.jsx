@@ -35,7 +35,7 @@ const ItemCard = ({ size = "secondary", title, imageName, price }) => {
       <div
         className={`${
           size === "secondary" ? "rounded-br-md" : "rounded-br-lg"
-        } absolute bottom-0 right-0 z-auto flex h-1/4 items-center  justify-center  bg-black pl-3 pr-2 text-white`}
+        } absolute bottom-0 right-0 z-10 flex h-1/4 items-center  justify-center  bg-black pl-3 pr-2 text-white`}
       >
         ${price}
       </div>

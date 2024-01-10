@@ -14,7 +14,7 @@ function Header({ showSavingButton = true, className = "" }) {
         height={32}
       />
       <nav className="hidden sm:block">
-        <NavbarItems />
+        <NavbarItems className={"flex gap-5"} />
       </nav>
       <MobileNavBar />
       {showSavingButton && (

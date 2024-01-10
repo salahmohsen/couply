@@ -9,7 +9,7 @@ const MobileNavBar = () => {
   return (
     <>
       <button
-        className=" z-50 block sm:hidden"
+        className=" z-30 block sm:hidden "
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         {!isMenuOpen && (
@@ -29,16 +29,16 @@ const MobileNavBar = () => {
             height={20}
             alt="close"
             priority="true"
-            className={`sm:hidden`}
+            className={`fixed right-5 top-7 sm:hidden`}
           />
         )}
       </button>
       <div
-        className={`fixed top-0 z-20 flex h-screen w-64 flex-col bg-white transition-all duration-500 ease-in-out ${
+        className={`fixed top-0 z-20 flex h-screen w-64 flex-col bg-white transition-all duration-500 ease-in-out sm:hidden ${
           isMenuOpen ? "right-0 " : "-right-full"
         }`}
       >
-        <NavbarItems className="mx-10 mt-20" />
+        <NavbarItems className="mx-10 mt-20 flex flex-col gap-5 sm:flex-row" />
       </div>
     </>
   );

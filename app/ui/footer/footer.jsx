@@ -4,7 +4,7 @@ import NavbarItems from "../navbar/navbarItems";
 const Footer = () => {
   return (
     <foote className=" flex h-64 flex-col gap-10 border-t py-10">
-      <div className="mx-5 flex justify-between sm:mx-14 sm:flex-row md:mx-32">
+      <div className="mx-5 flex flex-col items-center justify-between gap-5 sm:mx-14 sm:flex-row md:mx-32">
         <Image
           src={"/logo.svg"}
           priority="true"
@@ -12,7 +12,7 @@ const Footer = () => {
           width={103}
           height={32}
         />
-        <NavbarItems className="gap-10" />
+        <NavbarItems className="flex gap-5" />
       </div>
       <div className="mx-5 flex flex-col items-center justify-between gap-5  sm:mx-14 sm:flex-row md:mx-32">
         <div className="flex gap-5">

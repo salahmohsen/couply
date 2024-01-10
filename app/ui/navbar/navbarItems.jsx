@@ -1,8 +1,8 @@
 import NavbarItem from "./navbarItem";
 
-const NavbarItems = ({ className = "gap-5" }) => {
+const NavbarItems = ({ className }) => {
   return (
-    <ul className={`flex flex-col sm:flex-row   ${className}`}>
+    <ul className={` ${className}`}>
       <NavbarItem>Home</NavbarItem>
       <NavbarItem>Coupons</NavbarItem>
       <NavbarItem>FAQ</NavbarItem>
