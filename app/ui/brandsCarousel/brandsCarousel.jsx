@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Amazon from "@public/brands/amazon.svg";
-import Noon from "@public/brands/noon.svg";
-import Shopify from "@public/brands/shopify.svg";
-import Walmart from "@public/brands/walmart.svg";
+import Amazon from "@public/assets/brands/amazon.svg";
+import Noon from "@public/assets/brands/noon.svg";
+import Shopify from "@public/assets/brands/shopify.svg";
+import Walmart from "@public/assets/brands/walmart.svg";
 
 export default function BrandsCarousel() {
   const logos = [

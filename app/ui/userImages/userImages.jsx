@@ -24,7 +24,7 @@ const UserImages = () => {
 const UserImage = ({ filename, intersection = true, border = true }) => {
   return (
     <Image
-      src={`/users/${filename}`}
+      src={`/assets/users/${filename}`}
       width={54}
       height={54}
       alt="user"

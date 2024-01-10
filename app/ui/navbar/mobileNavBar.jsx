@@ -14,7 +14,7 @@ const MobileNavBar = () => {
       >
         {!isMenuOpen && (
           <Image
-            src="/menu.svg"
+            src="assets/menu.svg"
             priority="true"
             alt="menu"
             width="24"
@@ -24,7 +24,7 @@ const MobileNavBar = () => {
         )}
         {isMenuOpen && (
           <Image
-            src="/close.svg"
+            src="assets/close.svg"
             width={20}
             height={20}
             alt="close"

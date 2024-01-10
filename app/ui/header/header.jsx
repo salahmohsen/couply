@@ -7,7 +7,7 @@ function Header({ showSavingButton = true, className = "" }) {
   return (
     <header className={`${className} my-5 flex items-center justify-between`}>
       <Image
-        src={"/logo.svg"}
+        src={"assets/logo.svg"}
         priority="true"
         alt="logo"
         width={103}
